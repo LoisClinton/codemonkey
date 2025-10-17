@@ -1,11 +1,17 @@
 extends Node
 
+var tasks = []
 
-# Called when the node enters the scene tree for the first time.
+# signal for inventory update
+signal task_updated
+
 func _ready() -> void:
-	pass # Replace with function body.
+	# starts with 10 slots
+	tasks.resize(30)
+	
+func add_task():
+	task_updated.emit()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func remove_task():
+	task_updated.emit()
+	

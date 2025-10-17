@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cwihbkmmedxp2" path="res://assets/CodeMonkey_sprite_terrain.png" id="1_sugp2"]
 [ext_resource type="PackedScene" uid="uid://cknxyfqnx2h7s" path="res://scenes/player.tscn" id="2_jyhfs"]
-[ext_resource type="PackedScene" uid="uid://c107xf7e7d4ut" path="res://scenes/task.tscn" id="3_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://c107xf7e7d4ut" path="res://scenes/user_story.tscn" id="3_tbgi4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
 texture = ExtResource("1_sugp2")
@@ -130,5 +130,5 @@ tile_set = SubResource("TileSet_kek77")
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -12)
 
-[node name="Task" parent="." instance=ExtResource("3_tbgi4")]
+[node name="UserStory" parent="." instance=ExtResource("3_tbgi4")]
 position = Vector2(-36, 36)

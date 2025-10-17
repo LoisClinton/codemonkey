@@ -20,6 +20,10 @@ config/main_scene="uid://deyjtn8yhy5sm"
 config/canvas_textures/default_texture_filter=0
 config/autoload_on_startup=false
 
+[autoload]
+
+Global="*res://scripts/Global.gd"
+
 [display]
 
 window/stretch/mode="canvas_items"

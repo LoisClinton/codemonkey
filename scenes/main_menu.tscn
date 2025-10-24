@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc65urnijbi6u"]
+
+[ext_resource type="Script" uid="uid://dro8c2c3s8jy5" path="res://scenes/main_menu.gd" id="1_l6cm7"]
+
+[node name="Main Menu" type="Node"]
+script = ExtResource("1_l6cm7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+
+[node name="MenuLabel" type="Label" parent="."]
+light_mask = 3
+visibility_layer = 3
+z_index = 5
+offset_left = -24.0
+offset_top = -40.0
+offset_right = 25.0
+offset_bottom = -17.0
+text = "MENU"
+max_lines_visible = 1
+
+[node name="PlayButton" type="MenuButton" parent="."]
+light_mask = 3
+visibility_layer = 3
+z_index = 5
+offset_left = -24.0
+offset_top = -8.0
+offset_right = 24.0
+offset_bottom = 23.0
+text = "PLAY"
+flat = false
+switch_on_hover = true
+
+[node name="ExitButton" type="MenuButton" parent="."]
+offset_left = -24.0
+offset_top = 24.0
+offset_right = 17.0
+offset_bottom = 55.0
+scale = Vector2(1.1570722, 1)
+text = "EXIT"
+flat = false
+switch_on_hover = true

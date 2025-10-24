@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="CodeMonkey"
-run/main_scene="uid://deyjtn8yhy5sm"
+run/main_scene="uid://oe8pblggvsf"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="uid://c16nse050vt54"
 config/stretch/mode="canvas_items"

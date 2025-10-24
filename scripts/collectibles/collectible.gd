@@ -1,7 +1,5 @@
 class_name Collectible extends Area2D
 
-@onready var game_manager = %GameManager
-
 # default value
 var collectibleName : String
 
@@ -21,11 +19,12 @@ func collectible_check(nameOfCollectible):
 func addCollectible(nameOfClass):
 	print("added a " + nameOfClass + " to the inventory")
 	if (nameOfClass == "bug"):
-		game_manager.add_bug()
+		Global.add_bug()
+		queue_free()
 	elif (nameOfClass == "user_story"):
-		game_manager.add_user_story()
+		Global.add_user_story()
+		queue_free()
 
 #inhereted
 func _on_body_entered(_body: Node2D) -> void:
 	addCollectible(collectibleName)
-	queue_free()

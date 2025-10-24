@@ -22,7 +22,7 @@ config/autoload_on_startup=false
 
 [autoload]
 
-Global="*res://scripts/Global.gd"
+Global="*res://scripts/game_manager.gd"
 
 [display]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://b64d3ec7b0rtf"]
 
-[ext_resource type="Script" uid="uid://jh5y51he7ax8" path="res://scripts/TaskItems/Bug.gd" id="1_sp1hu"]
+[ext_resource type="Script" uid="uid://jh5y51he7ax8" path="res://scripts/TaskItems/bug.gd" id="1_sp1hu"]
 [ext_resource type="Texture2D" uid="uid://bsvvfv1ge0tk4" path="res://assets/bug_sprite_sheet.png" id="2_2xs7f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hr7jg"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://c107xf7e7d4ut"]
 
-[ext_resource type="Script" uid="uid://bmv5lmgc24ty7" path="res://scripts/TaskItems/UserStory.gd" id="1_5u8vp"]
+[ext_resource type="Script" uid="uid://bmv5lmgc24ty7" path="res://scripts/TaskItems/user_story.gd" id="1_5u8vp"]
 [ext_resource type="Texture2D" uid="uid://cwihbkmmedxp2" path="res://assets/CodeMonkey_sprite_terrain.png" id="2_dvyfb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ep223"]

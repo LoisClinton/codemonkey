@@ -1,22 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://c107xf7e7d4ut"]
+[gd_scene load_steps=4 format=3 uid="uid://c107xf7e7d4ut"]
 
 [ext_resource type="Script" uid="uid://bmv5lmgc24ty7" path="res://scripts/collectibles/user_story.gd" id="1_5u8vp"]
-[ext_resource type="Texture2D" uid="uid://cwihbkmmedxp2" path="res://assets/CodeMonkey_sprite_terrain.png" id="2_dvyfb"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ep223"]
-atlas = ExtResource("2_dvyfb")
-region = Rect2(80, 96, 16, 16)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ic7pc"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ep223")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[ext_resource type="PackedScene" uid="uid://m4538br2nn7n" path="res://scenes/collectible_sprite.tscn" id="2_qqjw1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m42n4"]
 size = Vector2(9, 11)
@@ -25,8 +10,7 @@ size = Vector2(9, 11)
 collision_layer = 2
 script = ExtResource("1_5u8vp")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_ic7pc")
+[node name="CollectibleSprite" parent="." instance=ExtResource("2_qqjw1")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-3.5, -2.5)

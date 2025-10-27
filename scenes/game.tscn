@@ -3,9 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://cwihbkmmedxp2" path="res://assets/CodeMonkey_sprite_terrain.png" id="1_u5sy4"]
 [ext_resource type="Texture2D" uid="uid://ci76oktn8a58o" path="res://assets/walls.png" id="2_gee14"]
 [ext_resource type="PackedScene" uid="uid://cknxyfqnx2h7s" path="res://scenes/player.tscn" id="3_0tnpc"]
-[ext_resource type="Script" uid="uid://vx8xte2884ct" path="res://scripts/inventory/bug_label.gd" id="4_vtaks"]
-[ext_resource type="Script" uid="uid://1evfj5h8lkr8" path="res://scripts/inventory/user_story_label.gd" id="5_kvpfn"]
 [ext_resource type="PackedScene" uid="uid://c107xf7e7d4ut" path="res://scenes/user_story.tscn" id="6_dinhu"]
+[ext_resource type="PackedScene" uid="uid://cpngk0m5ad1sv" path="res://scenes/tech_story.tscn" id="6_u5sy4"]
+[ext_resource type="PackedScene" uid="uid://c2wsh2nc2epv6" path="res://scenes/business_story.tscn" id="7_gee14"]
 [ext_resource type="PackedScene" uid="uid://b64d3ec7b0rtf" path="res://scenes/bug.tscn" id="7_kvuet"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
@@ -256,35 +256,8 @@ tile_map_data = PackedByteArray("AAAHAPv/AAAHAAMAAAAHAPr/AAAHAAIAAAAIAPr/AAAIAAM
 tile_set = SubResource("TileSet_kek77")
 
 [node name="Player" parent="." instance=ExtResource("3_0tnpc")]
+z_index = 1
 position = Vector2(-3, -1)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(3, 1)
-zoom = Vector2(4, 4)
-
-[node name="BugLabel" type="Label" parent="Player/Camera2D"]
-offset_left = -144.0
-offset_top = -80.0
-offset_right = -64.0
-offset_bottom = -57.0
-scale = Vector2(0.60336494, 0.6362076)
-size_flags_horizontal = 6
-text = "Bugs: 0/10"
-autowrap_trim_flags = 0
-justification_flags = 0
-script = ExtResource("4_vtaks")
-metadata/_edit_use_anchors_ = true
-
-[node name="UserStoryLabel" type="Label" parent="Player/Camera2D"]
-offset_left = -80.0
-offset_top = -80.0
-offset_right = 52.0
-offset_bottom = -57.0
-scale = Vector2(0.54399437, 0.6518168)
-size_flags_horizontal = 6
-text = "UserStories: 0/10"
-script = ExtResource("5_kvpfn")
-metadata/_edit_use_anchors_ = true
 
 [node name="Collectibles" type="Node" parent="."]
 
@@ -303,3 +276,18 @@ position = Vector2(122, -17)
 
 [node name="Bug2" parent="Collectibles" instance=ExtResource("7_kvuet")]
 position = Vector2(-71, 28)
+
+[node name="TechStory" parent="." instance=ExtResource("6_u5sy4")]
+position = Vector2(40, 24)
+
+[node name="BusinessStory" parent="." instance=ExtResource("7_gee14")]
+position = Vector2(208, 0)
+
+[node name="TechStory2" parent="." instance=ExtResource("6_u5sy4")]
+position = Vector2(-136, 40)
+
+[node name="BusinessStory2" parent="." instance=ExtResource("7_gee14")]
+position = Vector2(-72, -88)
+
+[node name="BusinessStory3" parent="." instance=ExtResource("7_gee14")]
+position = Vector2(72, -88)

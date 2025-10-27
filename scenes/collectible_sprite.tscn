@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://m4538br2nn7n"]
+
+[ext_resource type="Texture2D" uid="uid://mrbn5te2k22u" path="res://assets/tech_story.png" id="1_ynpuo"]
+[ext_resource type="Texture2D" uid="uid://cwihbkmmedxp2" path="res://assets/CodeMonkey_sprite_terrain.png" id="2_g3uge"]
+[ext_resource type="Texture2D" uid="uid://im0mi43ahgv5" path="res://assets/business_story.png" id="3_g3uge"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0c4cu"]
+atlas = ExtResource("1_ynpuo")
+region = Rect2(80, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ep223"]
+atlas = ExtResource("2_g3uge")
+region = Rect2(80, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3e60"]
+atlas = ExtResource("3_g3uge")
+region = Rect2(80, 96, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g3e60"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0c4cu")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ep223")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g3e60")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}]
+
+[node name="CollectibleSprite" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_g3e60")

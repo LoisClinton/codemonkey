@@ -1,11 +1,14 @@
 class_name Player extends CharacterBody2D
+
 @onready var animated_player_sprite = $AnimatedSprite2D
+@onready var hud_ui = $CanvasLayer
 
 const SPEED: float = 100.0
 
 func _ready() -> void:
 	# Defined globally in game_manager.gd
 	Global.set_player(self)
+	hud_ui.visible = true
 
 func _physics_process(_delta: float) -> void:
 	# Get input direction and handle movement.

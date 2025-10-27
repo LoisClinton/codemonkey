@@ -8,5 +8,5 @@ var game_instance = game_scene.instantiate()
 func _ready() -> void:
 	add_child(menu_instance)
 	print("WAITING")
-	remove_child(menu_instance)
-	add_child(game_instance)
+	#remove_child(menu_instance)
+	#add_child(game_instance)

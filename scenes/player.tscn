@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://bqmb3w0xu3ypv" path="res://scripts/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://d2lko7uoc5txq" path="res://assets/code_monkey_sprite.png" id="2_i3pqv"]
-[ext_resource type="Script" uid="uid://vx8xte2884ct" path="res://scripts/inventory/bug_label.gd" id="3_dqkch"]
-[ext_resource type="Script" uid="uid://1evfj5h8lkr8" path="res://scripts/inventory/user_story_label.gd" id="4_qlg0r"]
+[ext_resource type="Script" uid="uid://vx8xte2884ct" path="res://scripts/HUD/bug_label.gd" id="3_dqkch"]
+[ext_resource type="Script" uid="uid://1evfj5h8lkr8" path="res://scripts/HUD/user_story_label.gd" id="4_qlg0r"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
 atlas = ExtResource("2_i3pqv")
